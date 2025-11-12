@@ -1,0 +1,21 @@
+# ⚙️ Execution Guide — Banker's Algorithm Simulator
+
+This guide explains how to **set up, run, and deploy** the Banker's Algorithm Simulator project both locally and on GitHub Pages.
+
+---
+
+## 🧩 1. Project Overview
+
+This project is a **web-based OS visualization tool** that demonstrates the working of the **Banker’s Algorithm** — a deadlock avoidance method in operating systems.  
+It uses only **HTML, CSS, and JavaScript**, so no external dependencies or installations are needed.
+
+---
+
+## 💻 2. Running Locally
+
+You can run this simulator on any computer directly — no server required.
+
+### Steps:
+1. **Download or Clone** the repository:
+   ```bash
+   git clone https://github.com/veeraballinripesh2023-cmd/nripesh.git
