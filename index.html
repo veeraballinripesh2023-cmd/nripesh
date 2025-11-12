@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banker’s Algorithm Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>💻 Banker’s Algorithm Simulator</h1>
+    <p class="subtitle">Operating System Deadlock Avoidance Visualizer</p>
+  </header>
+
+  <main>
+    <section class="input-section">
+      <h2>Enter System Details</h2>
+      <div class="input-grid">
+        <label>Number of Processes:</label>
+        <input type="number" id="processes" min="1" max="10" value="3" />
+
+        <label>Number of Resources:</label>
+        <input type="number" id="resources" min="1" max="5" value="3" />
+      </div>
+      <button id="generate">Generate Tables</button>
+    </section>
+
+    <section class="tables-section">
+      <div id="allocation-section"></div>
+      <div id="max-section"></div>
+      <div id="available-section"></div>
+    </section>
+
+    <section class="output-section">
+      <h2>Execution Result</h2>
+      <pre id="output">Click “Run Banker’s Algorithm” to see the result...</pre>
+      <button id="run">Run Banker’s Algorithm</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Banker’s Algorithm Simulator by Nripesh</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
