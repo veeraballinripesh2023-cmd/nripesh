@@ -1,0 +1,154 @@
+/* === Dark Theme Styling for Banker's Algorithm Simulator === */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --bg-color: #0f172a;
+  --card-color: #1e293b;
+  --text-color: #f1f5f9;
+  --accent: #38bdf8;
+  --accent-hover: #0ea5e9;
+  --border: #334155;
+  --success: #22c55e;
+  --error: #ef4444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: var(--accent);
+}
+
+.subtitle {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+main {
+  width: 90%;
+  max-width: 900px;
+  background: var(--card-color);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.input-section {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.input-section h2 {
+  margin-bottom: 0.8rem;
+  color: var(--accent);
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  align-items: center;
+  justify-items: center;
+}
+
+input[type="number"] {
+  padding: 0.4rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  width: 80%;
+  background: #0f172a;
+  color: var(--text-color);
+}
+
+button {
+  background: var(--accent);
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: var(--accent-hover);
+  transform: scale(1.05);
+}
+
+.tables-section {
+  margin-top: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+table th, table td {
+  border: 1px solid var(--border);
+  padding: 0.5rem;
+  text-align: center;
+}
+
+table th {
+  background: #1e293b;
+  color: var(--accent);
+}
+
+.output-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#output {
+  background: #0f172a;
+  color: var(--text-color);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  font-size: 0.9rem;
+  min-height: 70px;
+  white-space: pre-wrap;
+}
+
+footer {
+  margin: 2rem 0 1rem 0;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
